@@ -38,5 +38,5 @@ exports.conf = {
 exports.help = {
   name: 'kick',
   description: 'İstediğiniz kişiyi sunucudan atar.',
-  usage: 'kick <kullanıcı> <sebep>'
+  usage: 'kick [kullanıcı], <sebep>'
 };
