@@ -10,8 +10,8 @@ exports.run = (client, message, args) => {
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
-  let modlog = guild.channels.find('name', 'cezalı-kişiler');
-  if (!modlog) return message.reply('`cezalı-kişiler` kanalı oluşturman lazım.');
+  let modlog = guild.channels.find('name', '☠-cezalı-kişiler-☠');
+  if (!modlog) return message.reply('`☠-cezalı-kişiler-☠` kanalı oluşturman lazım.');
   if (reason.length < 1) return message.reply('bu kişiyi neden attığını belirtirmisin ?');
   if (message.mentions.users.size < 1) return message.reply('atmak istediğin kişinin adını yazarmısın.').catch(console.error);
 
