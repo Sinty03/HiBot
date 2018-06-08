@@ -12,6 +12,7 @@ exports.run = function(client, message, args) {
     var password = generator.generate({
         length: uzunluk,
         numbers: true,
+        letter: false
     })
 
     message.channel.send(password);
