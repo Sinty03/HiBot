@@ -31,7 +31,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: [],
+  aliases: ['ban','at'],
   permLevel: 3
 };
 
