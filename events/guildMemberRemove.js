@@ -1,5 +1,6 @@
 module.exports = member => {
-  let guild = member.guild;
-  member.send('Niye gittin ?');
-  guild.defaultChannel.sendMessage(`${member.user.username} Nerelere gitti kim bilir :'( `);
+  const channel = member.guild.channels.find('name', 'ölüler');
+  if (!channel) return;
+  member.send(`Niye gittin ? https://www.youtube.com/watch?v=SLNgTfuJssw`)
+  channel.send(`**Sus ** ${member} ** yok ** ${member} ** öldü serverden ayrıldığı gün o iş bitti. **`);
 };
