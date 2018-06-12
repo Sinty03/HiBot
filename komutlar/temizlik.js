@@ -10,7 +10,7 @@ exports.run = function(client, message, args) {
     } else {
         message.channel.bulkDelete(sayi);
         message.channel.send("**" + sayi + "** adet mesaj silindi !").then(msg =>{
-            msg.delete("7000")
+            msg.delete("5000")
         });
     }
       
